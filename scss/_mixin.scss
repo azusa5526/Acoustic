@@ -1,0 +1,14 @@
+@mixin hideText($width, $height, $imgUrl, $imgUrl2x) {
+  background-size: contain;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-image: image-set(
+    url($imgUrl) 1x,
+    url($imgUrl2x) 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,6 @@
+h1 {
+  font-size: 0;
+  a {
+    @include hideText(130px, auto, '../img/logo_sm.png', '../img/logo_lg.png');
+  }
+}
