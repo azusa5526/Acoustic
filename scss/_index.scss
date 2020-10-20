@@ -1,5 +1,5 @@
 .swiper-container {
-  height: calc(100vh - 80px);
+  height: 100vh;
 
   img {
     display: block;
@@ -8,4 +8,22 @@
     object-fit: cover;
     object-position: center;
   }
+}
+
+.slogan {
+  background-image: url(../img/banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 70vh;
+  width: 100%;
+}
+
+.importantInfo {
+  background-image: url(../img/importantInfo.jpg);
+  background-size: cover;
+  background-position: center;
+
+  height: 70vh;
+  width: 100%;
 }

@@ -4,3 +4,19 @@ h1 {
     @include hideText(130px, auto, '../img/logo_sm.png', '../img/logo_lg.png');
   }
 }
+
+.header {
+  .icon li a {
+    font-size: 1.25rem;
+  }
+}
+
+.footer {
+  li a {
+    font-size: 1.5rem;
+  }
+
+  img {
+    max-width: 130px;
+  }
+}

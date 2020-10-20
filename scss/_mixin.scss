@@ -1,5 +1,7 @@
 @mixin hideText($width, $height, $imgUrl, $imgUrl2x) {
   background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
@@ -7,8 +9,6 @@
     url($imgUrl) 1x,
     url($imgUrl2x) 2x
   );
-  background-repeat: no-repeat;
-  background-position: center;
   width: $width;
   height: $height;
 }

@@ -1,0 +1,16 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.bg-glass {
+  backdrop-filter: blur(10px);
+}
