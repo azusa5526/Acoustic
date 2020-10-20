@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>acoustic</title>
   <link rel="stylesheet" href="../css/all.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -13,8 +13,8 @@
 
 <body>
   <div class="header">
-    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top">
-      <h1 class="mb-0 ml-sm-6 mr-10 py-6"><a class="navbar-brand p-0" href="#">Navbar</a></h1>
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
+      <h1 class="mb-0 ml-sm-6 mr-10 py-6"><a class="navbar-brand p-0" href="index.html">Navbar</a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,16 +23,16 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="#">所有產品</a>
+            <a class="nav-link font-weight-bold" href="products.html">所有產品</a>
           </li>
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="#">最新消息</a>
+            <a class="nav-link font-weight-bold" href="news.html">最新消息</a>
           </li>
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="#">預約試聽</a>
+            <a class="nav-link font-weight-bold" href="appointment.html">預約試聽</a>
           </li>
           <li class="d-block d-md-none nav-item px-5">
-            <a class="nav-link font-weight-bold" href="#">會員登入</a>
+            <a class="nav-link font-weight-bold" href="login.html">會員登入</a>
           </li>
         </ul>
       </div>
@@ -44,16 +44,16 @@
     </nav>
   </div>
 
+  <!-- content start here -->
+
   <div class="swiper-container swiper1 mb-12">
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="../img/index_slide_1.jpg" alt=""></div>
       <div class="swiper-slide"><img src="../img/index_slide_2.jpg" alt=""></div>
       <div class="swiper-slide"><img src="../img/index_slide_3.jpg" alt=""></div>
     </div>
+    <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination1"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-scrollbar"></div>
   </div>
 
   <div class="slogan container-fluid d-flex align-items-center px-0 mb-12">
@@ -72,14 +72,48 @@
     <div class="container">
       <div class="swiper-container swiper2">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="../img/index_slide_1.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/index_slide_2.jpg" alt=""></div>
-          <div class="swiper-slide"><img src="../img/index_slide_3.jpg" alt=""></div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../img/product_1_1.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p>2020.10.10 發售</p>
+                <h6>書架型</h6>
+                <h4>AIRPULSE 80</h4>
+                <p>鋁質振膜低失真中低音單體，為聲音提供有力保證。</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../img/product_2_1.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p>2020.09.05 發售</p>
+                <h6>家庭劇院</h6>
+                <h4>E255</h4>
+                <p>衛星通道獨立功放+DSP分頻系統，打造爆棚音效。</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <div class="card-img">
+                <img src="../img/product_3_1.jpg" alt="">
+              </div>
+              <div class="card-body">
+                <p>2020.10.10 發售</p>
+                <h6>落地型</h6>
+                <h4>600 Series Anniversary Edition</h4>
+                <p>秉持B&W最備受讚賞的一貫準則 – 採用最新聲學科技，加上最頂級的工學設計。</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination2"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
   </div>
@@ -113,7 +147,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <div class="importantInfo container-fluid d-flex align-items-center">
@@ -121,7 +154,7 @@
       <div class="row">
         <div class="col-md-7 bg-glass text-white shadow-lg py-6 px-8">
           <h2>重要消息</h2>
-          <ul class="list-unstyled">
+          <ul>
             <li class="d-flex align-items-center pr-6">
               <div class="text-primary text-white text-center px-4 m-4">Sep<br>31</div>
               <a class="text-white" href="">配合雙十連假，客服中心服務時間及線上購物出貨時間進行調整</a>
@@ -149,18 +182,13 @@
           <img src="../img/logo_sm_white.png" alt="">
         </div>
         <div class="col-auto">
-          <ul class="list-unstyled d-flex mb-0 mr-4 mr-sm-0">
+          <ul class="d-flex mb-0 mr-4 mr-sm-0">
             <li><a class="text-white" href=""><i class="fab fa-facebook"></i></a></li>
             <li class="pl-6"><a class="text-white" href=""><i class="fab fa-twitter"></i></a></li>
             <li class="pl-6"><a class="text-white" href=""><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
       </div>
-
-    </div>
-
-    <div class="rights">
-
     </div>
   </div>
 

@@ -6,9 +6,15 @@ img {
 
 a {
   display: block;
+  width: 100%;
   &:hover {
     text-decoration: none;
   }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
 }
 
 .bg-glass {
