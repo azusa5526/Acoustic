@@ -1,26 +1,3 @@
-// let swiper1 = new Swiper(".swiper1", {
-//   pagination: ".swiper-pagination1",
-//   paginationClickable: true,
-
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-// });
-
-// let swiper2 = new Swiper(".swiper-container", {
-//   slidesPerView: "auto",
-//   spaceBetween: 30,
-//   centeredSlides: true,
-//   loop: true,
-//   autoplay: { delay: 5000 },
-
-//   pagination: {
-//     el: ".swiper-pagination2",
-//     clickable: true,
-//   },
-// });
-
 let swiper1 = new Swiper(".swiper1", {
   loop: true,
   autoplay: { delay: 4000 },
@@ -48,5 +25,22 @@ let swiper2 = new Swiper(".swiper2", {
       slidesPerView: 3.5,
       spaceBetween: 25,
     },
+  }
+});
+let galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+let galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev',
+  // },
+  thumbs: {
+    swiper: galleryThumbs
   }
 });
