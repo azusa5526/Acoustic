@@ -13,8 +13,8 @@
 
 <body>
   <div class="header">
-    <nav class="navbar navbar-expand-md navbar-light bg-white">
-      <h1 class="mb-0 ml-sm-6 mr-10 py-6"><a class="navbar-brand p-0" href="index.html">Navbar</a></h1>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-transparent transition">
+      <h1 class="mb-0 ml-sm-6 mr-10 py-6"><a class="navbar-brand whiteIcon p-0" href="index.html">Navbar</a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -23,23 +23,23 @@
       <div class="collapse navbar-collapse" id="navbarToggler">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="products.html">所有產品</a>
+            <a class="nav-link text-white" href="products.html">所有產品</a>
           </li>
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="news.html">最新消息</a>
+            <a class="nav-link text-white" href="news.html">最新消息</a>
           </li>
           <li class="nav-item px-5">
-            <a class="nav-link font-weight-bold" href="appointment.html">預約試聽</a>
+            <a class="nav-link text-white" href="appointment.html">預約試聽</a>
           </li>
           <li class="d-block d-md-none nav-item px-5">
-            <a class="nav-link font-weight-bold" href="login.html">會員登入</a>
+            <a class="nav-link text-white" href="login.html">會員登入</a>
           </li>
         </ul>
       </div>
 
       <ul class="icon d-none d-md-flex navbar-nav mr-5">
-        <li class="nav-item"><a href="#"><i class="far fa-user-circle"></i></a></li>
-        <li class="nav-item pl-6"><a href="#"><i class="fas fa-search"></i></a></li>
+        <li class="nav-item"><a class="text-white" href="#"><i class=" far fa-user-circle"></i></a></li>
+        <li class="nav-item pl-6"><a class="text-white" href="#"><i class="fas fa-search"></i></a></li>
       </ul>
     </nav>
   </div>
@@ -48,9 +48,27 @@
 
   <div class="slide swiper-container swiper1 mb-12">
     <div class="swiper-wrapper">
-      <div class="swiper-slide"><img src="../img/index_slide_1.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../img/index_slide_2.jpg" alt=""></div>
-      <div class="swiper-slide"><img src="../img/index_slide_3.jpg" alt=""></div>
+      <div class="swiper-slide">
+        <img src="../img/index_slide_1.jpg" alt="">
+        <div class="slide__title py-5 px-10">
+          <h2 class="text-secondary font-weight-light">B&W 700 Series</h2>
+          <h5 class="text-secondary font-weight-light">Crafted. Honed. Perfected.</h5>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/index_slide_2.jpg" alt="">
+        <div class="slide__title py-5 px-10">
+          <h2 class="text-secondary font-weight-light">KEF LS50 Wireless II</h2>
+          <h5 class="text-secondary font-weight-light">Every note. Every word. Every detail.</h5>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="../img/index_slide_3.jpg" alt="">
+        <div class="slide__title py-5 px-4">
+          <h2 class="text-secondary font-weight-light">KEF Q750</h2>
+          <h5 class="text-secondary font-weight-light">Ebony and Ivory Rhapsody</h5>
+        </div>
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination swiper-pagination1"></div>
@@ -59,9 +77,9 @@
   <div class="slogan container-fluid d-flex align-items-center px-0 mb-12">
     <div class="container">
       <div class="row mx-0">
-        <div class="col-md-6 offset-lg-6 bg-glass shadow-lg p-11 p-lg-12">
-          <h2 class="mb-8">Listen and You Will See</h2>
-          <h5 class="font-weight-bold mb-4">即刻預約試聽<br>感受前所未有「看見」聲音的極上體驗</h5>
+        <div class="col-md-10 col-lg-6 offset-md-1 offset-lg-6 bg-glass shadow-lg p-11 p-lg-12">
+          <h2 class="mb-8 font-weight-light">Listen and You Will See</h2>
+          <h5 class="mb-4">即刻預約試聽<br>感受前所未有「看見」聲音的極上體驗</h5>
           <button class="btn btn-primary btn-lg px-10">立即預約</button>
         </div>
       </div>
@@ -70,7 +88,8 @@
 
   <div class="newProducts container-fluid bg-secondary mb-12">
     <div class="container">
-      <div class="swiper-container swiper2 py-10">
+      <h6 class="text-center font-weight-light py-11 mb-0">NEW PRODUCTS</h6>
+      <div class="swiper-container swiper2 pb-11">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <a href="#">
@@ -118,13 +137,12 @@
             </a>
           </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination2"></div>
       </div>
     </div>
   </div>
 
   <div class="news container mb-12">
+    <h6 class="text-center font-weight-light pb-11 mb-0">HOT NEWS</h6>
     <div class="row justify-content-md-between justify-content-center">
       <div class="col-md-6 pr-lg-10">
         <img src="../img/news_1.JPG" alt="">
@@ -158,18 +176,18 @@
   <div class="importantInfo container-fluid d-flex align-items-center">
     <div class="container">
       <div class="row">
-        <div class="col-md-7 bg-glass text-white shadow-lg py-6 px-8">
-          <h2>重要消息</h2>
+        <div class="col-md-10 col-lg-7 offset-md-1 bg-glass text-white shadow-lg py-8 px-md-8">
+          <h2 class="font-weight-light mb-6">重要消息</h2>
           <ul>
-            <li class="d-flex align-items-center pr-6">
+            <li class="d-flex align-items-center">
               <div class="text-primary text-white text-center px-4 m-4">Sep<br>31</div>
               <a class="text-white" href="">配合雙十連假，客服中心服務時間及線上購物出貨時間進行調整</a>
             </li>
-            <li class="d-flex align-items-center pr-6">
+            <li class="d-flex align-items-center">
               <div class="text-primary text-white text-center px-4 m-4">Sep<br>31</div>
               <a class="text-white" href="">配合雙十連假，客服中心服務時間及線上購物出貨時間進行調整</a>
             </li>
-            <li class="d-flex align-items-center pr-6">
+            <li class="d-flex align-items-center">
               <div class="text-primary text-white text-center px-4 m-4">Sep<br>31</div>
               <a class="text-white" href="">配合雙十連假，客服中心服務時間及線上購物出貨時間進行調整</a>
             </li>
@@ -202,9 +220,12 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
+  <!-- <script src="../node_modules/popper.js/dist/popper.min.js"></script> -->
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
   <script src="../js/swiperInit.js"></script>
+  <script src="../js/srollNav.js"></script>
+
 </body>
 
 </html>

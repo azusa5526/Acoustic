@@ -91,3 +91,11 @@ ul {
     overflow: hidden;
   }
 }
+
+//row limit
+.rowLimit-1 {
+  @include rowLimiter(1);
+}
+.rowLimit-2 {
+  @include rowLimiter(2);
+}
